@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- This website template was adapted by: Tyrell McCallum -->
+<html lang="en">
+<head>
+    <title>Iron Pulse Gym - Membership Registration</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&family=Francois+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<div id="container">
+
+    <!-- Header -->
+    <header>
+        <h1>Iron Pulse Gym</h1>
+        <p>Push Your Limits, Unleash Your Potential</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="register.html">Membership Registration</a></li>
+            <li><a href="creativity.html">Special Offers & Features</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Gym Contact -->
+        <div id="contact">
+            <h2>Connect With the Gym</h2>
+            <address>
+                Iron Pulse Gym Facility<br>
+                Newark, NJ<br><br>
+
+                Phone: <a href="tel:9735551234">(973) 555-1234</a><br>
+                Email: <a href="mailto:info@ironpulse.com" class="contact-email-link">info@ironpulse.com</a>
+            </address>
+
+            <h3>Find Your Location</h3>
+            <iframe src="https://www.google.com/maps?q=Newark,NJ&output=embed"
+                    width="600" height="450" allowfullscreen class="map">
+            </iframe>
+        </div>
+
+        <!-- Membership Registration Form Content -->
+        <div id="form">
+            <h2>Membership Registration Application</h2>
+            
+            <!-- Dynamic JavaScript Target Message Blocks -->
+            <div id="errorBox" class="error-messages" style="display:none;"></div>
+            <div id="successBox" class="success-message" style="display:none;"></div>
+
+            <form id="registrationForm" class="form-grid" novalidate>
+
+                <!-- Contact and Personal Info -->
+                <fieldset>
+                    <legend>Personal Profiles</legend>
+
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Tyrell M.">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="tyrellm@123.com">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Minimum age 14">
+                </fieldset>
+
+                <!-- Membership Stuff -->
+                <fieldset>
+                    <legend>Membership Tier Selection</legend>
+
+                    <label for="membershipType">Select Tier Level:</label>
+                    <select id="membershipType" name="membershipType">
+                        <option value="">-- Choose Option --</option>
+                        <option value="Basic">Basic Access ($29/mo)</option>
+                        <option value="Premium">Premium Pulse ($49/mo)</option>
+                        <option value="Elite">Elite Trainer Tier ($89/mo)</option>
+                    </select>
+
+                    <!-- Health Insurance -->
+                    <label for="insurance">Do you have Health Insurance</label>
+                    <select id="insurance" name="insurance">
+                        <option value="">-- Choose Option --</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+
+                    <!-- Emergency Contact -->
+                    <label for="emergencyName">Emergency Contact Full Name:</label>
+                    <input type="text" id="emergencyName" name="emergencyName" placeholder="Jane Doe">
+                </fieldset>
+
+                <!-- Goals -->
+                <fieldset>
+                    <legend>What are your goals?</legend>
+
+                    <label for="Goals">Your Goals:</label>
+                    <textarea id="fitnessGoals" name="fitnessGoals" rows="5" placeholder="Tell us what you wish to achieve (e.g. build muscle, lose weight, endurance)..."></textarea>
+                </fieldset>
+
+                <input type="submit" id="submit" value="Submit Application" class="btn">
+
+            </form>
+        </div>
+
+        <!-- Socials -->
+        <aside>
+            <h3>Follow the Pulse</h3>
+            <p>
+                <a href="https://facebook.com" class="external-link">Facebook</a><br>
+                <a href="https://instagram.com" class="external-link">Instagram</a><br>
+                <a href="https://twitter.com" class="external-link">Twitter</a>
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Copyright 2026. Iron Pulse Gym. All Rights Reserved.</p>
+        <p><a href="mailto:info@ironpulse.com">info@ironpulse.com</a></p>
+    </footer>
+
+</div>
+
+<!-- JS Script File -->
+<script src="js/script.js"></script>
+</body>
+</html>
